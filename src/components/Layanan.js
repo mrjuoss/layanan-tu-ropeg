@@ -7,7 +7,7 @@ function Layanan({jenisLayanan, cardImage, styleComponent}) {
     <div>
       <a href="https://google.com"
       className="group hover:transform hover:scale-75">
-        <img src={`img/${cardImage}`} alt="" />
+        <img src={`img/${cardImage}`} alt="" className="sm:justify-items-center" />
         <p className={styleComponent}> {jenisLayanan} </p>
       </a>
     </div>
