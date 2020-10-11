@@ -1,20 +1,27 @@
 import React from "react";
 import "./css/dist/tailwind.css";
 
+import Navigation from "./components/Navigation";
+import Banner from "./components/Banner";
+import Layanan from "./components/Layanan";
+import Footer from "./components/Footer";
+
 function App() {
  return (
-< div className = "flex max-w-md p-6 mx-auto mt-10 bg-gray-100 rounded-lg shadow-xl" >
-  <
-  div className = "pt-1 ml-6" >
-  <
-  h1 className = "text-2xl leading-tight text-blue-700" >
-  Tailwind and Create React App <
-  /h1> <
-  p className = "text-base leading-normal text-gray-700" >
-  Building apps together with @mrjuoss<
-  /p> <
-  /div> <
-  /div>
+  <div  >
+    <Navigation logoImage="logo.png"/>
+    <Banner />
+    <div className = "container mx-auto flex justify-between mt-10">
+      <Layanan jenisLayanan="REALISASI" cardImage="card-1.png" styleComponent={"bg-blue-400 text-center text-white py-2"} />
+      <Layanan jenisLayanan="SURAT MASUK" cardImage="card-2.png" styleComponent={"bg-blue-500 text-center text-white py-2"} />
+      <Layanan jenisLayanan="RAPAT" cardImage="card-3.png" styleComponent={"bg-purple-700 text-center text-white py-2"} />
+      <Layanan jenisLayanan="LAPORAN" cardImage="card-4.png" styleComponent={"bg-purple-800 text-center text-white py-2"} />
+      <Layanan jenisLayanan="PENGADUAN" cardImage="card-5.png" styleComponent={"bg-purple-900 text-center text-white py-2"} />
+    </div>
+    <Footer />
+
+
+  </div>
  )
 }
 
