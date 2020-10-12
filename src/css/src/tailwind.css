@@ -3,3 +3,11 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.nav-menu {
+  @apply bg-purple-900 mr-2 px-8 py-2 rounded;
+}
+
+.nav-menu:hover {
+  @apply bg-purple-200 font-semibold;
+}

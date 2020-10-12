@@ -8,15 +8,15 @@ import Footer from "./components/Footer";
 
 function App() {
  return (
-  <div  >
+  <div>
     <Navigation logoImage="logo.png"/>
     <Banner />
-    <div className = "container mx-auto sm:flex-col md:flex-row md:justify-between mt-10">
-      <Layanan jenisLayanan="REALISASI" cardImage="card-1.png" styleComponent={"sm:mx-4 sm:mb-4 bg-blue-400 text-center text-white py-2 shadow-lg"} />
-      <Layanan jenisLayanan="SURAT MASUK" cardImage="card-2.png" styleComponent={"sm:mx-4 sm:mb-4 bg-blue-500 text-center text-white py-2 shadow-lg"} />
-      <Layanan jenisLayanan="RAPAT" cardImage="card-3.png" styleComponent={"sm:mx-4 sm:mb-4 bg-purple-700 text-center text-white py-2 shadow-lg"} />
-      <Layanan jenisLayanan="LAPORAN" cardImage="card-4.png" styleComponent={"sm:mx-4 sm:mb-4 bg-purple-800 text-center text-white py-2 shadow-lg"} />
-      <Layanan jenisLayanan="PENGADUAN" cardImage="card-5.png" styleComponent={"sm:mx-4 sm:mb-4 bg-purple-900 text-center text-white py-2 shadow-lg"} />
+    <div className = "flex flex-col md:mx-auto md:container md:flex-row md:flex-wrap md:justify-between mt-10">
+      <Layanan jenisLayanan="REALISASI" cardImage="card-1.png" />
+      <Layanan jenisLayanan="SURAT MASUK" cardImage="card-2.png" />
+      <Layanan jenisLayanan="RAPAT" cardImage="card-3.png" />
+      <Layanan jenisLayanan="LAPORAN" cardImage="card-4.png" />
+      <Layanan jenisLayanan="PENGADUAN" cardImage="card-5.png" />
     </div>
     <Footer />
 
